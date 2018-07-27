@@ -1,0 +1,60 @@
+<!doctype html>
+
+<html>
+
+<head>
+  	
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.13.2/xlsx.core.min.js"></script>
+	<script src="./script.js"></script>
+	<style type="text/css">
+		
+		tr {
+			width: 100%;
+			display: inline-table;
+			table-layout: fixed;
+		}
+
+		td {
+			word-wrap: break-word;
+		}
+
+		table {
+			height: 500px;
+			border: 0px;
+		}
+
+		thead {
+			display: block;
+		}
+		tbody {
+			overflow-y: scroll;
+			overflow-x: hidden;
+			height: 450px;
+			width: 96%;
+			position: absolute;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="page-wrapper">
+	    <div class="row">
+	      <div class="col-lg-12">
+	     	 <div class="container" style="width:inherit">
+			<h2>Display Multiple Excel Sheet in Table and Export as PDF</h2>
+			<div id ="robotApi"></div>
+			<div id="multipleExcelSheet" class="tab-content"></div>
+        	 </div>
+      	       </div>
+	  </div>
+	</div>
+</body>
+
+</html>
